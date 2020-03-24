@@ -36,10 +36,10 @@ Round Robin is a CPU scheduling algorithm where each process is assigned a fixed
 4. Keep traversing the all processes while all processes
    are not done. Do following for i'th process if it is
    not done yet.
-    -(a) If rem_bt[i] > quantum
-       -(i)  t = t + quantum
-       -(ii) bt_rem[i] -= quantum;
-    -(b) Else // Last cycle for this process
-       -(i)  t = t + bt_rem[i];
-       -(ii) wt[i] = t - bt[i]
-       -(ii) bt_rem[i] = 0; // This process is over
+   -If rem_bt[i] > quantum
+      -t = t + quantum
+      - bt_rem[i] -= quantum;
+   -Else // Last cycle for this process
+      -t = t + bt_rem[i];
+      -wt[i] = t - bt[i]
+      -bt_rem[i] = 0; // This process is over
