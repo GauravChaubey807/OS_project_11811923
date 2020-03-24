@@ -21,7 +21,7 @@ To make two queues with round robin scheduling for faculty and students so that 
 # Terms and Formulas
 1. **Completion Time:** Time at which process completes its execution.
 2. **Turn Around Time:** Time Difference between completion time and arrival time. Turn Around Time = Completion Time – Arrival Time
-3. **Waiting Time(W.T):** Time Difference between turn around time and burst time.
+3. **Waiting Time (W.T) :** Time Difference between turn around time and burst time.
 4. **Waiting Time = Turn Around Time – Burst Time**
 
 
