@@ -27,19 +27,15 @@ Round Robin is a CPU scheduling algorithm where each process is assigned a fixed
 
 
 # Pseudo Code
-1. Create an array rem_bt[] to keep track of remaining
-   burst time of processes. This array is initially a 
-   copy of bt[] (burst times array)
-2. Create another array wt[] to store waiting times
-   of processes. Initialize this array as 0.
+1. Create an array rem_bt[] to keep track of remaining burst time of processes. This array is initially a copy of bt[] (burst times array)
+2. Create another array wt[] to store waiting times of processes. Initialize this array as 0.
 3. Initialize time : t = 0
-4. Keep traversing the all processes while all processes
-   are not done. Do following for i'th process if it is
+4. Keep traversing the all processes while all processes are not done. Do following for i'th process if it is
    not done yet.
-   -If rem_bt[i] > quantum
-      -t = t + quantum
-      - bt_rem[i] -= quantum;
-   -Else // Last cycle for this process
-      -t = t + bt_rem[i];
-      -wt[i] = t - bt[i]
-      -bt_rem[i] = 0; // This process is over
+  -If rem_bt[i] > quantum
+   -t = t + quantum
+   -bt_rem[i] -= quantum;
+  -Else // Last cycle for this process
+   -t = t + bt_rem[i];
+   -wt[i] = t - bt[i]
+   -bt_rem[i] = 0; // This process is over
