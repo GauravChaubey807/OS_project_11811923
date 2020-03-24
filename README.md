@@ -20,10 +20,10 @@ Round Robin is a CPU scheduling algorithm where each process is assigned a fixed
 
 
 # Terms and Formulas
-1. Completion Time: Time at which process completes its execution.
-2. Turn Around Time: Time Difference between completion time and arrival time. Turn Around Time = Completion Time – Arrival Time
-3. Waiting Time(W.T): Time Difference between turn around time and burst time.
-4. Waiting Time = Turn Around Time – Burst Time
+1. **Completion Time:** Time at which process completes its execution.
+2. **Turn Around Time:** Time Difference between completion time and arrival time. Turn Around Time = Completion Time – Arrival Time
+3. **Waiting Time(W.T):** Time Difference between turn around time and burst time.
+4. **Waiting Time = Turn Around Time – Burst Time**
 
 
 # Pseudo Code
@@ -36,10 +36,10 @@ Round Robin is a CPU scheduling algorithm where each process is assigned a fixed
 4. Keep traversing the all processes while all processes
    are not done. Do following for i'th process if it is
    not done yet.
-    - If rem_bt[i] > quantum
-       (i)  t = t + quantum
-       (ii) bt_rem[i] -= quantum;
-    - Else // Last cycle for this process
-       (i)  t = t + bt_rem[i];
-       (ii) wt[i] = t - bt[i]
-       (ii) bt_rem[i] = 0; // This process is over
+    -(a) If rem_bt[i] > quantum
+       -(i)  t = t + quantum
+       -(ii) bt_rem[i] -= quantum;
+    -(b) Else // Last cycle for this process
+       -(i)  t = t + bt_rem[i];
+       -(ii) wt[i] = t - bt[i]
+       -(ii) bt_rem[i] = 0; // This process is over
