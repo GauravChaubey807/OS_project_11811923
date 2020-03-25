@@ -1,8 +1,7 @@
 #include<stdio.h>
- 
-int main()
+void Timemag()
 {
-      int i, limit, total = 0, x, counter = 0, time_quantum;
+	int i, limit, total = 0, x, counter = 0, time_quantum;
       int wait_time = 0, turnaround_time = 0, arrival_time[10], burst_time[10], temp[10];
       float average_wait_time, average_turnaround_time;
       printf("\nEnter Total Number of Processes: ");
@@ -65,5 +64,35 @@ int main()
       average_turnaround_time = turnaround_time * 1.0 / limit;
       printf("\n\nAverage Waiting Time:\t%f", average_wait_time);
       printf("\nAvg Turn Around Time:\t%f\n", average_turnaround_time);
-      return 0;
+     
+} 
+int main()
+{
+	int choice;
+	while(choice!=3)
+	{
+		printf("\n1. Student Queue");
+		printf("\n2. Faculty Queue");
+		printf("\n3. Exit");
+		printf("\nChoose the option to proceed : ");
+		scanf("%d",&choice);
+		switch(choice)
+			{
+				case 1:
+					{
+						Timemag();
+						break;
+					}
+				case 2:
+					{
+						Timemag();
+						break;
+					}
+				case 3:
+					{
+						break;
+					}
+			}
+	}
+	 return 0;	
 }
