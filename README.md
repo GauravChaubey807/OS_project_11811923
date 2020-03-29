@@ -1,5 +1,10 @@
 # OS_project_11811923
-Operating System Project
+- Operating System Project
+- Gaurav Chaubey
+- CSE - 316
+- Roll No - 19
+- Reg No - 11811923 
+
 
 
 # Question
